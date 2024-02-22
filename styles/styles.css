@@ -99,9 +99,14 @@ p {
   }
 
   .navigation .nav-button {
+    display: flex;
+    flex-direction: column;
     width: 100%;
     text-align: center;
     margin: 10px 0;
+  }
+  .nav-button a {
+    display: block;
   }
 }
 
@@ -386,11 +391,11 @@ p {
 #orderConfirmation {
   display: none;
   margin-top: 20px;
-  color: white;
-  background-color: #44c767;
+  color: #055f9b;
+  background-color: white;
   padding: 10px;
   border-radius: 5px;
-  text-align: center;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5); /* Add drop shadow effect */
 }
 
 /* Testimonials Section Styles */
