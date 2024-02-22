@@ -1,4 +1,4 @@
-// Maz Radwan Sprint 1 FrontEnd Dev
+// Maz Radwan Sprint 1 FrontEnd Dev Feb 2024
 
 document.addEventListener("DOMContentLoaded", () => {
   // Slide in Animation
@@ -49,3 +49,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+//
