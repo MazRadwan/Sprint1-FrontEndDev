@@ -76,11 +76,16 @@ p {
   border-radius: 20px; /* Rounded corners */
   margin-left: 10px; /* Space between buttons */
   transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
 }
 
 .navigation .nav-button:hover {
   background-color: #044f8c; /* Darker shade on hover */
   color: white;
+}
+
+.nav-button a {
+  text-decoration: none;
 }
 /* Responsive Grid Adjustments */
 @media (max-width: 768px) {
@@ -187,7 +192,7 @@ p {
   transition: opacity 0.3s ease-out, transform 0.3s ease-out; /* Smooth transition for the slide-in effect */
 }
 
-/* Trigger the animation when the .animate class is added */
+/* Trigger the animation  */
 .food-item.animate {
   opacity: 1; /* Make the item fully visible */
   transform: translateY(0); /* Move the item to its final position */
@@ -302,7 +307,7 @@ p {
 }
 
 .staying-in-info p {
-  margin-bottom: 15px; /* Space between paragraphs and button */
+  margin-bottom: 15px;
   text-align: center;
   font-size: 1.3em;
   padding-bottom: 30px;
@@ -350,7 +355,7 @@ p {
   overflow: hidden; /* Add this to the .food-item if the image overflows during scale */
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments for staying in section */
 @media (max-width: 768px) {
   .staying-in-container {
     grid-template-columns: 1fr; /* Stack the boxes on top of each other on smaller screens */
@@ -442,6 +447,7 @@ p {
   }
 }
 
+/* staying in scrolling animations */
 .staying-in-info,
 .staying-in-image,
 .testimonial-box {
@@ -449,7 +455,6 @@ p {
   transform: translateY(100%); /* Position elements off-screen */
 }
 
-/* Use the same animation as before */
 .staying-in-info.animate,
 .staying-in-image.animate,
 .testimonial-box.animate {
@@ -553,7 +558,15 @@ p {
   color: #044f8c; /* Hover effect for quick links */
 }
 
-/* Copyright info within footer */
+#email {
+  color: white;
+  text-decoration: none;
+}
+
+#email:hover {
+  color: #044f8c; /* Hover effect for email */
+}
+
 .copyright-info {
   text-align: center;
   margin-top: 20px; /* Space from the rest of the footer content */
