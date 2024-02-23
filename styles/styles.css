@@ -38,9 +38,9 @@ p {
 }
 
 .logo {
-  width: 100px; /* Adjust the width as necessary */
+  width: 100px;
   /* Adjust the height as necessary */
-  height: auto; /*  Maintain the aspect ratio */
+  height: auto;
 }
 
 .logo-text h1,
@@ -50,14 +50,14 @@ p {
 }
 
 .logo-text h1 {
-  font-size: 30px; /* Adjust the size as necessary */
-  margin-bottom: auto; /* Adjust the spacing between the title and the subtitle */
-  font-family: "Fontdiner Swanky", cursive; /* Add a fun font */
+  font-size: 30px;
+  margin-bottom: auto;
+  font-family: "Fontdiner Swanky", cursive;
 }
 
 .logo-text p {
-  font-size: 36px; /* Adjust the size as necessary */
-  font-family: "fugaz one", sans-serif; /* Add a fun font */
+  font-size: 36px;
+  font-family: "fugaz one", sans-serif;
   margin-left: 3rem;
 }
 .logo-container a,
@@ -73,14 +73,14 @@ p {
   padding: 10px 20px;
   cursor: pointer;
   font-size: 16px;
-  border-radius: 20px; /* Rounded corners */
-  margin-left: 10px; /* Space between buttons */
+  border-radius: 20px;
+  margin-left: 10px;
   transition: background-color 0.3s, color 0.3s;
   text-decoration: none;
 }
 
 .navigation .nav-button:hover {
-  background-color: #044f8c; /* Darker shade on hover */
+  background-color: #044f8c;
   color: white;
 }
 
@@ -112,15 +112,15 @@ p {
 
 /* Hero Section Styles */
 .hero-section {
-  background-image: url("../images/TheBigGaryBurger.png"); /* Replace with your image path */
+  background-image: url("../images/TheBigGaryBurger.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
   min-height: 700px;
-  position: relative; /* This ensures the pseudo-element is positioned relative to this container */
+  position: relative;
   color: white;
-  padding: 150px 20px; /* Increase padding to make the section taller */
+  padding: 150px 20px;
 }
 
 .hero-section::before {
@@ -130,34 +130,34 @@ p {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
-  z-index: 1; /* Under the text, above the image */
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
 .hero-text {
   position: relative;
-  z-index: 2; /* Above the overlay */
-  text-align: center; /* Center the text */
+  z-index: 2;
+  text-align: center;
 }
 .hero-text h1 {
-  font-family: "Frijole", cursive; /* Use Frijole for 'Home of the' */
-  font-size: 48px; /* Adjust font size as needed */
-  margin-bottom: 0.5em; /* Spacing between 'Home of the' and 'Big Gary' */
+  font-family: "Frijole", cursive;
+  font-size: 48px;
+  margin-bottom: 0.5em;
 }
 .hero-text .big-gary {
-  font-family: "Fontdiner Swanky", cursive; /* Font for 'Big Gary' */
-  font-size: 96px; /* Make 'Big Gary' larger */
-  line-height: 1; /* Adjust line-height for better spacing */
+  font-family: "Fontdiner Swanky", cursive;
+  font-size: 96px;
+  line-height: 1;
 }
 
 /* Food Section Styles */
 .food-section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px; /* Increased gap */
+  gap: 20px;
   padding: 50px;
   justify-content: space-around;
-  background-color: #0c0b0b; /* Light background for the food section */
+  background-color: #0c0b0b;
 }
 
 .food-item {
@@ -167,15 +167,15 @@ p {
 }
 
 .food-item img {
-  display: block; /* This will remove the extra space beneath the image */
+  display: block;
   width: 100%;
   height: auto;
   transition: transform 0.3s ease;
 }
 
 .food-item img:hover {
-  transform: scale(1.05); /* Ensure the image scales within the container */
-  overflow: hidden; /* Add this to the .food-item if the image overflows during scale */
+  transform: scale(1.05);
+  overflow: hidden;
 }
 
 /* Food Section animation styles */
@@ -192,15 +192,15 @@ p {
 
 /* Initial state for the animation */
 .food-item {
-  opacity: 0; /* Make items invisible to start */
-  transform: translateY(100%); /* Position items off-screen */
-  transition: opacity 0.3s ease-out, transform 0.3s ease-out; /* Smooth transition for the slide-in effect */
+  opacity: 0;
+  transform: translateY(100%);
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
 }
 
 /* Trigger the animation  */
 .food-item.animate {
-  opacity: 1; /* Make the item fully visible */
-  transform: translateY(0); /* Move the item to its final position */
+  opacity: 1;
+  transform: translateY(0);
   animation: slideInFromBottom 0.5s forwards ease-out;
 }
 
@@ -213,7 +213,7 @@ p {
 
 .meet-gary-container {
   display: grid;
-  grid-template-columns: 1fr 2fr; /* Adjust the ratio as needed */
+  grid-template-columns: 1fr 2fr;
   gap: 20px;
   align-items: center;
   background-color: rgb(10, 10, 10);
@@ -231,16 +231,16 @@ p {
 
 .gary-image img {
   width: 100%;
-  max-width: 400px; /* Adjust as needed */
+  max-width: 400px;
   height: auto;
-  border-radius: 10px; /* Optional styling */
+  border-radius: 10px;
 }
 
 .meet-gary-container h2 {
   font-size: 36px;
-  text-align: center; /* Adjust the size as needed */
-  font-family: "Fontdiner Swanky", cursive; /* Add a fun font */
-  margin-bottom: 20px; /* Spacing between title and text */
+  text-align: center;
+  font-family: "Fontdiner Swanky", cursive;
+  margin-bottom: 20px;
 }
 
 /* Responsive adjustments for smaller screens */
@@ -252,15 +252,15 @@ p {
   }
 
   .gary-image img {
-    max-width: 100%; /* Full width on small screens */
-    margin-bottom: 20px; /* Spacing between image and text */
+    max-width: 100%;
+    margin-bottom: 20px;
   }
 }
 
 .gary-image,
 .gary-info {
-  opacity: 0; /* Start elements as invisible */
-  transform: translateY(100%); /* Start below their final position */
+  opacity: 0;
+  transform: translateY(100%);
 }
 
 /* You can use the same slideInFromBottom animation */
@@ -273,41 +273,38 @@ p {
 
 /* Staying In Section Styles */
 .staying-in-section {
-  background-color: black; /* Full-width black background */
+  background-color: black;
   color: white;
-  padding: 50px 20px; /* Adjusted horizontal padding to align with the food items */
+  padding: 50px 20px;
 }
 
 .staying-in-container {
   display: grid;
-  grid-template-columns: repeat(
-    2,
-    minmax(0, 1fr)
-  ); /* Two equal columns, with minmax for flexibility */
-  gap: 20px; /* Spacing between the two boxes */
-  align-items: start; /* Aligns items at the top of the container */
-  max-width: 1200px; /* Center the container within its max-width */
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  align-items: start;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .staying-in-info {
-  background-color: #055f9b; /* Blue background */
-  padding: 40px; /* Padding inside the blue box */
-  border-radius: 8px; /* Rounded corners */
+  background-color: #055f9b;
+  padding: 40px;
+  border-radius: 8px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-width: 560px; /* Minimum width to prevent the box from getting too narrow */
-  max-width: 100%; /* Allow the box to grow to the full width of the container */
-  height: auto; /* Height adjusted to be auto for responsive design */
+  min-width: 560px;
+  max-width: 100%;
+  height: auto;
   padding-bottom: 170px;
 }
 
 .staying-in-info h2 {
   font-family: "Fontdiner Swanky", cursive;
-  font-size: 30px; /* Adjusted font size */
-  margin-bottom: 15px; /* Space below the heading */
+  font-size: 30px;
+  margin-bottom: 15px;
   padding: 50px;
 }
 
@@ -327,56 +324,53 @@ p {
   border: none;
   border-radius: 20px;
   cursor: pointer;
-  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Transition for hover effects */
-  width: 200px; /* Width adjusted as needed */
-  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2); /* Drop shadow */
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+  width: 200px;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.2);
 }
 
 .order-online-button:hover {
-  background-color: #044f8c; /* Darker shade on hover */
+  background-color: #044f8c;
   color: white;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5); /* Stronger drop shadow on hover */
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
 
 .staying-in-container {
   display: grid;
-  grid-template-columns: repeat(
-    2,
-    minmax(0, 1fr)
-  ); /* Two equal columns, with minmax for flexibility */
-  gap: 40px; /* Increase the spacing between the two boxes as desired */
-  align-items: start; /* Aligns items at the top of the container */
-  max-width: 1200px; /* Center the container within its max-width */
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 40px;
+  align-items: start;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .staying-in-image img {
   max-width: 100%;
   height: auto;
-  border-radius: 8px; /* Rounded corners */
+  border-radius: 8px;
 }
 .staying-in-image img:hover {
-  transform: scale(1.05); /* Ensure the image scales within the container */
-  overflow: hidden; /* Add this to the .food-item if the image overflows during scale */
+  transform: scale(1.05);
+  overflow: hidden;
 }
 
 /* Responsive adjustments for staying in section */
 @media (max-width: 768px) {
   .staying-in-container {
-    grid-template-columns: 1fr; /* Stack the boxes on top of each other on smaller screens */
+    grid-template-columns: 1fr;
   }
 
   .staying-in-info,
   .staying-in-image {
-    min-width: 0; /* Allow boxes to fill the container on smaller screens */
+    min-width: 0;
   }
 }
 
 .staying-in-info,
 .staying-in-image,
 .testimonial-box {
-  opacity: 0; /* Ensure elements start invisible */
-  transform: translateY(100%); /* Position elements off-screen */
+  opacity: 0;
+  transform: translateY(100%);
 }
 
 /* Use the same animation as before */
@@ -395,60 +389,57 @@ p {
   background-color: white;
   padding: 10px;
   border-radius: 5px;
-  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5); /* Add drop shadow effect */
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
 }
 
 /* Testimonials Section Styles */
 .testimonial-container {
-  background-color: #3c3721; /* Main container background color */
-  padding: 20px 20px; /* Padding for the container */
-  display: grid; /* Use grid for layout */
-  grid-template-columns: repeat(
-    3,
-    1fr
-  ); /* Three columns for the three testimonials */
-  gap: 30px; /* Gap between testimonials */
-  justify-content: space-around; /* Space around the testimonials */
+  background-color: #3c3721;
+  padding: 20px 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  justify-content: space-around;
 }
 
 .testimonial-box {
-  background-color: black; /* Testimonial box background color */
-  border-radius: 10px; /* Rounded corners for the boxes */
-  padding: 30px; /* Padding inside each testimonial box */
-  display: flex; /* Use flexbox for centering content */
-  flex-direction: column; /* Stack flex items vertically */
-  align-items: center; /* Center items horizontally */
-  justify-content: center; /* Center items vertically */
-  color: white; /* Text color */
-  text-align: center; /* Center text alignment */
-  min-height: 200px; /* Minimum height to maintain size */
+  background-color: black;
+  border-radius: 10px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  min-height: 200px;
 }
 
 .testimonial-box h3 {
-  font-size: 24px; /* Header font size */
-  margin-bottom: 10px; /* Space below the header */
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
 .testimonial-box p {
-  font-size: 18px; /* Paragraph font size */
+  font-size: 18px;
 }
 
 .testimonial-box cite {
-  font-style: italic; /* Italicize cite */
-  display: block; /* Display cite as block to occupy its own line */
-  margin-top: 10px; /* Space above the citation */
+  font-style: italic;
+  display: block;
+  margin-top: 10px;
   margin-bottom: 20px;
 }
 
 .testimonial-box .fa-star {
-  color: yellow; /* Star color */
-  margin: 1px; /* Margin around stars */
+  color: yellow;
+  margin: 1px;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .testimonial-container {
-    grid-template-columns: 1fr; /* Stack the testimonials on top of each other on smaller screens */
+    grid-template-columns: 1fr;
   }
 }
 
@@ -456,8 +447,8 @@ p {
 .staying-in-info,
 .staying-in-image,
 .testimonial-box {
-  opacity: 0; /* Ensure elements start invisible */
-  transform: translateY(100%); /* Position elements off-screen */
+  opacity: 0;
+  transform: translateY(100%);
 }
 
 .staying-in-info.animate,
@@ -470,15 +461,15 @@ p {
 
 /* Footer styles */
 .site-footer {
-  background-color: #055f9b; /* Blue background color */
+  background-color: #055f9b;
   color: white;
   padding: 40px 0;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto auto; /* Three columns layout */
+  grid-template-rows: auto auto;
   align-items: center;
   justify-content: space-between;
-  gap: 30px; /* Space between columns */
+  gap: 30px;
 }
 
 .footer-column {
@@ -488,13 +479,13 @@ p {
 }
 
 .footer-hours-location {
-  background-color: black; /* Black box for hours and location */
+  background-color: black;
   padding: 20px;
   border-radius: 10px;
   min-width: 300px;
-  width: 300px; /* Set a fixed width */
-  height: 300px; /* Set a fixed height to maintain a square */
-  margin: auto; /* Center the box if it's not full width */
+  width: 300px;
+  height: 300px;
+  margin: auto;
 }
 
 .footer-hours-location h2,
@@ -503,20 +494,20 @@ p {
 }
 
 .footer-logo {
-  width: 120px; /* Adjust this to the size you want */
-  height: auto; /* This will maintain the aspect ratio */
-  margin-right: 20px; /* Add space between the logo and the text */
+  width: 120px;
+  height: auto;
+  margin-right: 20px;
 }
 
 .footer-social-media {
-  display: flex; /* Add flex display */
-  align-items: center; /* Center items vertically */
-  justify-content: center; /* Align items to the start horizontally */
-  flex-direction: row; /* Set the direction of items to row */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
 }
 
 .footer-social-media img {
-  margin-right: 20px; /* Add space between the logo and the text */
+  margin-right: 20px;
 }
 
 .footer-social-media h3 {
@@ -528,19 +519,19 @@ p {
 }
 
 .social-icons {
-  display: flex; /* Ensure icons are also in a row */
+  display: flex;
   justify-content: center;
-  align-items: center; /* Center icons vertically */
+  align-items: center;
 }
 
 .social-icons a {
-  color: white; /* Social icons color */
-  font-size: 24px; /* Social icons size */
+  color: white;
+  font-size: 24px;
   margin: 0 10px;
 }
 
 .social-icons a:hover {
-  color: #044f8c; /* Hover effect for icons */
+  color: #044f8c;
 }
 
 .footer-quick-links {
@@ -560,7 +551,7 @@ p {
 }
 
 .footer-quick-links a:hover {
-  color: #044f8c; /* Hover effect for quick links */
+  color: #044f8c;
 }
 
 #email {
@@ -569,54 +560,54 @@ p {
 }
 
 #email:hover {
-  color: #044f8c; /* Hover effect for email */
+  color: #044f8c;
 }
 
 .copyright-info {
   text-align: center;
-  margin-top: 20px; /* Space from the rest of the footer content */
+  margin-top: 20px;
 }
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .site-footer {
-    grid-template-columns: 1fr; /* Stacking columns on top of each other */
+    grid-template-columns: 1fr;
     text-align: center;
   }
 
   .footer-column {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center align for responsive layout */
+    align-items: center;
   }
 
   .social-icons a {
     font-size: 20px;
-    display: flex; /* Adjusting social icons size for smaller screens */
+    display: flex;
     justify-content: center;
     align-items: center;
   }
   @media (max-width: 768px) {
     .footer-hours-location {
-      width: 100%; /* Full width on smaller screens */
-      padding-top: 100%; /* Top padding is based on width, so this will maintain aspect ratio */
-      position: relative; /* Enable absolute positioning for children */
+      width: 100%;
+      padding-top: 100%;
+      position: relative;
     }
 
     .footer-hours-location-content {
-      position: absolute; /* Absolute position the content */
+      position: absolute;
       top: 0;
       right: 0;
       bottom: 0;
       left: 0;
-      overflow: auto; /* Add scroll for smaller screens */
+      overflow: auto;
     }
 
     @media (max-width: 768px) {
       .copyright-info {
-        grid-row-start: 2; /* Place it in the second row */
+        grid-row-start: 2;
         grid-column-start: 1;
-        grid-column-end: -1; /* Span across all columns */
+        grid-column-end: -1;
       }
     }
   }
