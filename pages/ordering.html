@@ -8,34 +8,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel = "stylesheet" href = "../styles/ordering.css">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Frijole&family=Fontdiner+Swanky&family=Fugaz+One&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&family=Fugaz+One&display=swap"
+    rel="stylesheet"
+  />
     <title>Order Page</title>
 </head>
 
 <header class="site-header">
-    <div class="header-content">
-      <div class="logo-container">
-        <img
-          src="../images/GaryBlueLogo.png"
-          alt="Gary Blue's Diner"
-          class="logo"
-        />
-        <div class="logo-text">
-          <h1>Gary Blue's</h1>
-          <p>Diner</p>
-        </div>
+  <div class="header-content">
+    <a
+      href="index.html"
+      class="logo-container"
+      style="text-decoration: none; color: inherit"
+    >
+      <img
+        src="../images/GaryBlueLogo.png"
+        alt="Gary Blue's Diner"
+        class="logo"
+      />
+      <div class="logo-text">
+        <h1>Gary Blue's</h1>
+        <p>Diner</p>
       </div>
-      <nav class="navigation">
-        <a href = "index.html"><button class="nav-button">Home</button></a>
-        <a href = "menu.html"><button class="nav-button">Menu</button></a>
-        <a href = "ordering.html"><button class="nav-button">Order</button></a>
-      </nav>
-    </div>
+    </a>
+    <nav class="navigation">
+      <a href="../pages/index.html" class="nav-button">Home</a>
+      <a href="../pages/menu.html" class="nav-button">Menu</a>
+      <a href="../pages/ordering.html" class="nav-button">Order</a>
+    </nav>
+  </div>
 </header>
 
 <body>
     <br>
+    <div>
     <section>
-        <h1 style = "font-size: 45pt;"><p style="text-align:center;">
+        <h1 class="order-food">
             Order Food
         </p></h1>
     </section>
@@ -43,7 +65,7 @@
     <section>
         <div class = "order-row">
             <img src = "../images/GaryBlueBurritos.png" width = "10%" height = "10%">
-            <h1>Burritos</h1>
+            <h1 class="food-item-name">Burritos</h1>
             <button class = "order-button" id = "Remove1">
                 Remove One
             </button>
@@ -53,14 +75,14 @@
             <button class = "order-button" id = "Add1">
                 Add One
             </button>
-            <h1>$9.99</h1>
+            <h1 class="price">$9.99</h1>
         </div>
     </section>
     <br>
     <section>
         <div class = "order-row">
-            <img src = "../images/BigGarySandwich.png" width = "10%" height = "10%">
-            <h1>Big Gary</h1>
+            <img src = "../images/TheBigGaryBurgerSquare.png" width = "10%" height = "10%">
+            <h1 class="food-item-name">The Big Gary</h1>
             <button class = "order-button" id = "Remove2">
                 Remove One
             </button>
@@ -70,14 +92,14 @@
             <button class = "order-button" id = "Add2">
                 Add One
             </button>
-            <h1>$7.99</h1>
+            <h1 class="price">$7.99</h1>
         </div>
     </section>
     <br>
     <section>
         <div class = "order-row">
             <img src = "../images/GaryBlueFajita.png" width = "10%" height = "10%">
-            <h1>Fajitas</h1>
+            <h1 class="food-item-name">Fajitas</h1>
             <button class = "order-button" id = "Remove3">
                 Remove One
             </button>
@@ -87,14 +109,14 @@
             <button class = "order-button" id = "Add3">
                 Add One
             </button>
-            <h1>$9.99</h1>
+            <h1 class="price">$9.99</h1>
         </div>
     </section>
     <br>
     <section>
         <div class = "order-row">
             <img src = "../images/GaryBlueTacos.png" width = "10%" height = "10%">
-            <h1>Tacos</h1>
+            <h1 class="food-item-name">Tacos</h1>
             <button class = "order-button" id = "Remove4">
                 Remove One
             </button>
@@ -104,14 +126,14 @@
             <button class = "order-button" id = "Add4">
                 Add One
             </button>
-            <h1>$8.99</h1>
+            <h1 class="price">$8.99</h1>
         </div>
     </section>
     <br>
     <section>
         <div class = "order-row">
             <img src = "../images/GaryBlueIceCream.jpeg" width = "10%" height = "10%">
-            <h1>Ice Cream</h1>
+            <h1 class="food-item-name">Ice Cream</h1>
             <button class = "order-button" id = "Remove5">
                 Remove One
             </button>
@@ -121,14 +143,14 @@
             <button class = "order-button" id = "Add5">
                 Add One
             </button>
-            <h1>$5.99</h1>
+            <h1 class="price">$5.99</h1>
         </div>
     </section>
     <br>
     <section>
         <div class = "order-row">
             <img src = "../images/GaryBlueOmelettes.jpeg" width = "10%" height = "10%">
-            <h1>Omelettes</h1>
+            <h1 class="food-item-name">Omelette</h1>
             <button class = "order-button" id = "Remove6">
                 Remove One
             </button>
@@ -138,14 +160,14 @@
             <button class = "order-button" id = "Add6">
                 Add One
             </button>
-            <h1>$4.99</h1>
+            <h1 class="price">$4.99</h1>
         </div>
     </section>
     <br>
     <section>
         <div class = "order-row">
             <img src = "../images/GaryBluePancakes.jpeg" width = "10%" height = "10%">
-            <h1>Pancakes</h1>
+            <h1 class="food-item-name">Pancakes</h1>
             <button class = "order-button" id = "Remove7">
                 Remove One
             </button>
@@ -155,14 +177,14 @@
             <button class = "order-button" id = "Add7">
                 Add One
             </button>
-            <h1>$6.99</h1>
+            <h1 class="price">$6.99</h1>
         </div>
     </section>
     <br>
     <section>
         <div class = "order-row">
             <img src = "../images/GaryBluePizza.jpeg" width = "10%" height = "10%">
-            <h1>Pizza</h1>
+            <h1 class="food-item-name">Pizza</h1>
             <button class = "order-button" id = "Remove8">
                 Remove One
             </button>
@@ -172,17 +194,34 @@
             <button class = "order-button" id = "Add8">
                 Add One
             </button>
-            <h1>$19.99</h1>
+            <h1 class="price">$19.99</h1>
         </div>
     </section>
     <br>
+    <section>
+      <div class = "order-row">
+          <img src = "../images/BigGarySandwich.png" width = "10%" height = "10%">
+          <h1 class="food-item-name">Big Gary Sandwich</h1>
+          <button class = "order-button" id = "Remove9">
+              Remove One
+          </button>
+          <h2 id = "Quantity9">
+              0
+          </h2>
+          <button class = "order-button" id = "Add9">
+              Add One
+          </button>
+          <h1 class="price">$8.99</h1>
+      </div>
+  </section>
+  <br>
 
-    <h1 id = "Total" style = "text-align:center;">
+    <h1 id = "Total">
         Total: $0
     </h1>
 
     <br>
-
+    <section class="order-form">
     <p style = "text-align:center;">
         <label for = "email">Email:</label>
         <input type = "email" id = "Email" name = "email"> &nbsp; &nbsp; &nbsp;
@@ -200,7 +239,7 @@
         </a>
     </p>
     <br>
-
+  </section>
     <script src = "../scripts/Ordering.js">
     </script>
 </body>

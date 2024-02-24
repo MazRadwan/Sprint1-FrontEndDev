@@ -1,9 +1,38 @@
+.order-food {
+  font-size: 45px;
+  text-align: center;
+  font-family: fontDiner Swanky, cursive;
+  background-color: rgb(42, 41, 41);
+  color: white;
+  margin-bottom: 20px;
+}
 .order-row {
   display: flex;
   flex-direction: row;
   align-items: center;
+  /* text-align: center; */
+  justify-content: space-between;
+  margin-bottom: 20px; /* Add some space between rows */
+}
+
+.order-row img {
+  width: 10%; /* fixed percentage width */
+  height: auto; /* maintain aspect ratio */
+  margin-left: 40px;
+  border-radius: 15px;
+}
+
+.order-row h1,
+.order-row h2 {
   text-align: center;
-  justify-content: space-evenly;
+  flex-grow: 1; /* allows the text to grow and fill the space */
+  color: #055f9b;
+}
+
+.food-item-name {
+  margin-left: 20px; /* adjust as needed */
+  flex-basis: 20%; /* adjust as needed, gives a default width */
+  color: #055f9b; /* blue color */
 }
 
 .order-button {
@@ -16,12 +45,69 @@
   border-radius: 20px;
   margin-left: 10px;
   transition: background-color 0.3s, color 0.3s;
-  flex: 0.15;
+  flex: 0 auto;
+  flex-basis: 10%;
+}
+
+.price {
+  flex-basis: 10%; /* adjust as needed */
+  text-align: center; /* ensures text is centered in the allocated space */
+}
+.order-row h1 {
+  font-size: 1.5em; /* consistent font size */
+  white-space: nowrap; /* prevent wrapping */
+}
+
+.order-row h2 {
+  font-size: 1.5em; /* consistent font size */
+  white-space: nowrap; /* prevent wrapping */
 }
 
 .order-button:hover {
   background-color: #044f8c;
   color: white;
+}
+
+#Total {
+  text-align: center;
+  margin-right: 20px;
+  font-size: 2em;
+  color: #081abb;
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.order-form p {
+  margin-bottom: 10px;
+  color: #055f9b;
+  font-size: 1.5em;
+}
+
+@media (max-width: 768px) {
+  .order-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .order-row img {
+    flex: 0 0 80px; /* smaller width on small screens */
+  }
+
+  .order-row h1,
+  .order-row h2 {
+    flex: 1 100%; /* take full width on a new line */
+    text-align: center; /* center-align text */
+  }
+
+  .order-button {
+    flex: 1 100%; /* take full width on a new line */
+    margin: 5px 0; /* add some vertical spacing */
+  }
 }
 
 /* Basic Reset */
@@ -64,9 +150,9 @@ p {
 }
 
 .logo {
-  width: 100px; /* Adjust the width as necessary */
+  width: 100px;
   /* Adjust the height as necessary */
-  height: auto; /*  Maintain the aspect ratio */
+  height: auto;
 }
 
 .logo-text h1,
@@ -76,17 +162,22 @@ p {
 }
 
 .logo-text h1 {
-  font-size: 30px; /* Adjust the size as necessary */
-  margin-bottom: auto; /* Adjust the spacing between the title and the subtitle */
-  font-family: "Fontdiner Swanky", cursive; /* Add a fun font */
+  font-size: 30px;
+  margin-bottom: auto;
+  font-family: "Fontdiner Swanky", cursive;
 }
 
 .logo-text p {
-  font-size: 36px; /* Adjust the size as necessary */
-  font-family: "fugaz one", sans-serif; /* Add a fun font */
+  font-size: 36px;
+  font-family: "fugaz one", sans-serif;
   margin-left: 3rem;
 }
-
+.logo-container a,
+.logo-container a:hover,
+.logo-container a:focus {
+  text-decoration: none;
+  color: inherit;
+}
 .navigation .nav-button {
   background: white;
   border: 2px solid white;
@@ -94,14 +185,19 @@ p {
   padding: 10px 20px;
   cursor: pointer;
   font-size: 16px;
-  border-radius: 20px; /* Rounded corners */
-  margin-left: 10px; /* Space between buttons */
+  border-radius: 20px;
+  margin-left: 10px;
   transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
 }
 
 .navigation .nav-button:hover {
-  background-color: #044f8c; /* Darker shade on hover */
+  background-color: #044f8c;
   color: white;
+}
+
+.nav-button a {
+  text-decoration: none;
 }
 /* Responsive Grid Adjustments */
 @media (max-width: 768px) {
