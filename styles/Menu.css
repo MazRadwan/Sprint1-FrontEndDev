@@ -22,6 +22,7 @@ html {
 .hero {
   position: relative;
   width: 100%;
+  font-family: "Fontdiner Swanky", cursive;
 }
 
 .pic {
@@ -80,6 +81,7 @@ html {
   display: flex;
   justify-content: left;
   float: left;
+  font-weight: 700;
 }
 
 img {
@@ -89,14 +91,14 @@ img {
   width: 450px;
 }
 
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 700;
-}
 
-/* Header styles */
+.right{
+    display: flex;
+    justify-content: right;
+    float: right;
+    font-weight: 700;
+  }
+
 .site-header {
   background-color: #055f9b;
   color: white;
@@ -144,7 +146,12 @@ img {
   font-family: "fugaz one", sans-serif;
   margin-left: 3rem;
 }
-
+.logo-container a,
+.logo-container a:hover,
+.logo-container a:focus {
+  text-decoration: none;
+  color: inherit;
+}
 .navigation .nav-button {
   background: white;
   border: 2px solid white;
@@ -188,6 +195,7 @@ img {
     display: block;
   }
 }
+
 
 /* Footer styles */
 .site-footer {
@@ -284,7 +292,15 @@ img {
   color: #044f8c;
 }
 
-/* Copyright info within footer */
+#email {
+  color: white;
+  text-decoration: none;
+}
+
+#email:hover {
+  color: #044f8c;
+}
+
 .copyright-info {
   text-align: center;
   margin-top: 20px;
