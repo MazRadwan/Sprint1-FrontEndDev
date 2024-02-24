@@ -1,3 +1,5 @@
+/* author: Evan Pittman Sprint 1 Feb 2024 */
+
 * {
   margin: 0;
   padding: 0;
@@ -91,13 +93,12 @@ img {
   width: 450px;
 }
 
-
-.right{
-    display: flex;
-    justify-content: right;
-    float: right;
-    font-weight: 700;
-  }
+.right {
+  display: flex;
+  justify-content: right;
+  float: right;
+  font-weight: 700;
+}
 
 .site-header {
   background-color: #055f9b;
@@ -195,7 +196,6 @@ img {
     display: block;
   }
 }
-
 
 /* Footer styles */
 .site-footer {

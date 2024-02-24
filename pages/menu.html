@@ -1,262 +1,381 @@
+<!-- written by Evan Pittman Sprint 1 Frontend Dev Sprint 1 -->
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="../styles/Menu.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/Menu.css" />
 
-<link
-href="https://fonts.googleapis.com/css2?family=Frijole&family=Fontdiner+Swanky&family=Fugaz+One&display=swap"
-rel="stylesheet"
-/>
-<link
-rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
-/>
-<link
-rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-/>
-
-<link
-href="https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&family=Fugaz+One&display=swap"
-rel="stylesheet"
-/>
-</head>
-<body>
-  <header class="site-header">
-    <div class="header-content">
-      <a
-        href="index.html"
-        class="logo-container"
-        style="text-decoration: none; color: inherit"
-      >
-        <img
-          src="../images/GaryBlueLogo.png"
-          alt="Gary Blue's Diner"
-          class="logo"
-        />
-        <div class="logo-text">
-          <h1>Gary Blue's</h1>
-          <p>Diner</p>
-        </div>
-      </a>
-      <nav class="navigation">
-        <a href="../pages/index.html" class="nav-button">Home</a>
-        <a href="../pages/menu.html" class="nav-button">Menu</a>
-        <a href="../pages/ordering.html" class="nav-button">Order</a>
-      </nav>
-    </div>
-  </header>
-
-
-<!-- hero part -->
-  <div class="hero">
-    <img class="pic" src="../images/TheBigGaryBurger.png" alt="Gary Blues items" id="hero"/>
-    <div class="text">Menu</div>
-  </div>
-
-
-
-  <br>
-  <br>
-  <!-- menu items -->
-<div class="box">
-  <div class="menuitems">
-    <span class="right">Big Gary Sandwich&nbsp;&nbsp;
-      <br> $7.99
-    </span>
-    <img src="../images/BigGarySandwich.png" alt="Big Gary Sandwich" width="150px"  height="100px" class="left">
-    <div class="overlay">
-      <img src="../images/BigGarySandwich.png" alt="Big Gary Sandwich">
-      <p>A juicy, buttermilk-marinated, crispy-fried chicken breast on a toasted brioche bun with crisp lettuce, tomato, and your choice of sauce.
-
-        This sandwich is a classic and satisfying option. The chicken is tender and juicy on the inside, and crispy and flavorful on the outside. The brioche bun is soft and buttery, and the lettuce and tomato add a refreshing touch. You can choose from a variety of sauces to customize your sandwich to your taste.
-        
-        <button  onclick="window.location.href = 'ordering.html'">Order</button>
-      </p>
-    </div>
-  </div>
-
-
-  <div class="menuitems">
-    <span class="right">Gary Blue Burritos&nbsp;&nbsp;
-      <br> $9.99
-    </span>
-    <img src="../images/GaryBlueBurritos.png" alt="Gary Blue Burritos" width="150px"  height="100px" class="left">
-    <div class="overlay">
-      <img src="../images/GaryBlueBurritos.png" alt="Gary Blue Burritos">
-      <p>A flour tortilla filled with seasoned ground beef, black beans, roja cheese, rice, and pico de gallo. Served with a side of sour cream and salsa.
-
-        This burrito is a hearty and satisfying meal. The ground beef is seasoned with a blend of spices, and the black beans add protein and fiber. The roja cheese is a melty blend of cheddar and jack cheeses, and the rice and pico de gallo add flavor and texture. The sour cream and salsa are the perfect finishing touches.
-        
-        <button onclick="window.location.href = 'ordering.html'">order</button>
-      </p>
-    </div>
-  </div>
-
-  <div class="menuitems">
-    <span class="right">Gary Blue Fajita&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <br>$9.99
-    </span>
-    <img src="../images/GaryBlueFajita.png" alt="Gary Blue Fajita" width="150px"  height="100px" class="left">
-    <div class="overlay">
-      <img src="../images/GaryBlueFajita.png" alt="Gary Blue Fajita">
-      <p>Embark on a flavor adventure with our tantalizing sizzling fajitas, featuring tender, marinated chicken strips sautéed to perfection alongside a medley of vibrant red and green bell peppers, and onions. Indulge in the symphony of flavors as you build your own fajitas with warm flour tortillas, creamy sour cream, zesty guacamole, and our signature salsa. Each bite delivers a burst of smoky, spicy, and savory sensations, leaving you craving more.
-
-        <button onclick="window.location.href = 'ordering.html'">order</button>
-      </p>
-    </div>
-  </div>
-  
-  <div class="menuitems">
-    <span class="right">Gary Blue Tacos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <br>$8.99
-    </span>
-    <img src="../images/GaryBlueTacos.png" alt="Gary Blue Tacos" width="150px"  height="100px" class="left">
-    <div class="overlay">
-      <img src="../images/GaryBlueTacos.png" alt="Gary Blue Tacos">
-      <p>A trio of soft corn tortillas filled with your choice of our savory fillings, topped with fresh cilantro and onions, and served with a wedge of lime.
-        This is a great option for a shareable meal or a light lunch. The tacos are packed with flavor and the toppings are fresh and flavorful
-        <button onclick="window.location.href = 'ordering.html'">order</button>
-      </p>
-    </div>
-  </div>
-  
-  <div class="menuitems">
-    <span class="right">The Big Gary Burger
-      <br> $8.99
-    </span>
-    <img src="../images/TheBigGaryBurger.png" alt="The Big Gary Burger" width="150px"  height="100px" class="left">
-    <div class="overlay">
-      <img src="../images/TheBigGaryBurger.png" alt="The Big Gary Burger">
-      <p>A juicy all-beef patty topped with crisp lettuce, tomato, onion, and your choice of cheese. Served on a toasted sesame seed bun with a side of fries.
-
-        A juicy, all-beef patty nestled between a toasted sesame seed bun with crisp lettuce, vine-ripened tomato, sliced red onion, creamy mayonnaise, and melty American cheese. Served with a side of our hand-cut fries.
-        
-        This classic cheeseburger is sure to satisfy any craving. The beef patty is cooked to perfection and the toppings are fresh and flavorful. The fries are crispy on the outside and fluffy on the inside.
-        
-        <button onclick="window.location.href = 'ordering.html'">order</button>
-      </p>
-    </div>
-  </div>
-  
-  <div class="menuitems">
-    <span class="right">Gary Blue Ice Cream
-      <br>$5.99
-    </span>
-    <img src="../images/GaryBlueIceCream.jpeg" alt="Gary Blue Ice Cream Deluxe" width="150px"  height="100px" class="left">
-    <div class="overlay">
-      <img src="../images/GaryBlueIceCream.jpeg" alt="Gary Blue Ice Cream Deluxe">
-      <p>A decadent and delightful dessert that combines the creamy richness of cheesecake with the refreshing sweetness of strawberries and the smooth indulgence of ice cream. This dish features a layer of creamy New York-style cheesecake nestled upon a bed of sweet strawberry sauce. Topped with scoops of vanilla ice cream, fresh strawberries, and a drizzle of chocolate sauce, this sundae is a symphony of textures and flavors that will tantalize your taste buds.
-
-        <button onclick="window.location.href = 'ordering.html'">order</button>
-      </p>
-    </div>
-  </div>
-
-  <div class="menuitems">
-    <span class="right">Gary Blue Omelettes
-      <br>$4.99
-    </span>
-    <img src="../images/GaryBlueOmelettes.jpeg" alt="Gary Blue Omelettes" width="150px"  height="100px" class="left">
-    <div class="overlay">
-      <img src="../images/GaryBlueOmelettes.jpeg" alt="Gary Blue Omelettes">
-      <p>A light and fluffy omelette filled with a blend of three melty cheeses, diced tomatoes, and fresh spinach. This dish is a delicious and satisfying option for any meal.
-        This omelette is a great option for those looking for a healthy and satisfying meal. It is packed with protein, vitamins, and minerals, and it is sure to keep you feeling full and energized.
-        
-        <button onclick="window.location.href = 'ordering.html'">order</button>
-      </p>
-    </div>
-  </div>
-
-  <div class="menuitems">
-    <span class="right">Gary Blue Pancakes
-      <br>$6.99
-    </span>
-    <img src="../images/GaryBluePancakes.jpeg" alt="Gary Blue Pancakes" width="150px"  height="100px" class="left">
-    <div class="overlay">
-      <img src="../images/GaryBluePancakes.jpeg" alt="Gary Blue Pancakes">
-      <p>A stack of fluffy buttermilk pancakes, served with your choice of maple syrup and butter.
-
-        These pancakes are a classic breakfast dish that is sure to please everyone. The buttermilk adds a slight tang to the pancakes, and the maple syrup and butter add sweetness and richness.
-        
-        <button onclick="window.location.href = 'ordering.html'">order</button>
-      </p>
-    </div>
-  </div>
-  <div class="menuitems">
- <span class="right">Gary Blue Pizza&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <br>$19.99
- </span>
-    <img src="../images/GaryBluePizza.jpeg" alt="Gary Blue Pizza" width="150px"  height="100px" class="left">
-    <div class="overlay">
-      <img src="../images/GaryBluePizza.jpeg" alt="Gary Blue Pizza">
-      <p>A classic and delicious pizza made with a simple combination of tomato sauce, mozzarella cheese, and fresh basil leaves.
-
-        This pizza is a perfect example of how simple ingredients can come together to create a flavorful and satisfying meal. The tomato sauce is tangy and sweet, the mozzarella cheese is creamy and melty, and the fresh basil leaves add a bright and refreshing flavor.
-        
-        <button onclick="window.location.href = 'ordering.html'">order</button>
-      </p>
-    </div>
-  </div>
-
-
-
-</div>
-
-</body>
-<!-- footer -->
-<footer class="site-footer">
-  <div class="footer-column footer-hours-location">
-    <h3>Our Hours</h3>
-    <br />
-    <p>Monday - Friday 11am-11pm</p>
-    <p>Saturday & Sunday 11am - 7pm</p>
-    <br />
-    <h3>Find us</h3>
-    <br />
-    <p>55 Main St, St. John's NL, A1A 2A2</p>
-    <p>Phone: (709) 555-1212</p>
-    <p>
-      <a href="mailto:info@garybluediner.com" id="email"
-        >Email: info@garybluediner.com</a
-      >
-    </p>
-  </div>
-
-  <div class="footer-column footer-social-media">
-    <img
-      src="../images/GaryBlueLogo.png"
-      alt="Gary Blue's Diner"
-      class="footer-logo"
+    <link
+      href="https://fonts.googleapis.com/css2?family=Frijole&family=Fontdiner+Swanky&family=Fugaz+One&display=swap"
+      rel="stylesheet"
     />
-    <div>
-      <h3>Find Gary On Social Media</h3>
-      <div class="social-icons">
-        <a href="https://facebook.com" aria-label="Facebook"
-          ><i class="fab fa-facebook-f"></i
-        ></a>
-        <a href="https://twitter.com" aria-label="Twitter"
-          ><i class="fab fa-twitter"></i
-        ></a>
-        <a href="https://instagram.com" aria-label="Instagram"
-          ><i class="fab fa-instagram"></i
-        ></a>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&family=Fugaz+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-content">
+        <a
+          href="index.html"
+          class="logo-container"
+          style="text-decoration: none; color: inherit"
+        >
+          <img
+            src="../images/GaryBlueLogo.png"
+            alt="Gary Blue's Diner"
+            class="logo"
+          />
+          <div class="logo-text">
+            <h1>Gary Blue's</h1>
+            <p>Diner</p>
+          </div>
+        </a>
+        <nav class="navigation">
+          <a href="../pages/index.html" class="nav-button">Home</a>
+          <a href="../pages/menu.html" class="nav-button">Menu</a>
+          <a href="../pages/ordering.html" class="nav-button">Order</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- hero part -->
+    <div class="hero">
+      <img
+        class="pic"
+        src="../images/TheBigGaryBurger.png"
+        alt="Gary Blues items"
+        id="hero"
+      />
+      <div class="text">Menu</div>
+    </div>
+
+    <br />
+    <br />
+    <!-- menu items -->
+    <div class="box">
+      <div class="menuitems">
+        <span class="right"
+          >Big Gary Sandwich&nbsp;&nbsp; <br />
+          $7.99
+        </span>
+        <img
+          src="../images/BigGarySandwich.png"
+          alt="Big Gary Sandwich"
+          width="150px"
+          height="100px"
+          class="left"
+        />
+        <div class="overlay">
+          <img src="../images/BigGarySandwich.png" alt="Big Gary Sandwich" />
+          <p>
+            A juicy, buttermilk-marinated, crispy-fried chicken breast on a
+            toasted brioche bun with crisp lettuce, tomato, and your choice of
+            sauce. This sandwich is a classic and satisfying option. The chicken
+            is tender and juicy on the inside, and crispy and flavorful on the
+            outside. The brioche bun is soft and buttery, and the lettuce and
+            tomato add a refreshing touch. You can choose from a variety of
+            sauces to customize your sandwich to your taste.
+
+            <button onclick="window.location.href = 'ordering.html'">
+              Order
+            </button>
+          </p>
+        </div>
+      </div>
+
+      <div class="menuitems">
+        <span class="right"
+          >Gary Blue Burritos&nbsp;&nbsp; <br />
+          $9.99
+        </span>
+        <img
+          src="../images/GaryBlueBurritos.png"
+          alt="Gary Blue Burritos"
+          width="150px"
+          height="100px"
+          class="left"
+        />
+        <div class="overlay">
+          <img src="../images/GaryBlueBurritos.png" alt="Gary Blue Burritos" />
+          <p>
+            A flour tortilla filled with seasoned ground beef, black beans, roja
+            cheese, rice, and pico de gallo. Served with a side of sour cream
+            and salsa. This burrito is a hearty and satisfying meal. The ground
+            beef is seasoned with a blend of spices, and the black beans add
+            protein and fiber. The roja cheese is a melty blend of cheddar and
+            jack cheeses, and the rice and pico de gallo add flavor and texture.
+            The sour cream and salsa are the perfect finishing touches.
+
+            <button onclick="window.location.href = 'ordering.html'">
+              order
+            </button>
+          </p>
+        </div>
+      </div>
+
+      <div class="menuitems">
+        <span class="right"
+          >Gary Blue Fajita&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <br />$9.99
+        </span>
+        <img
+          src="../images/GaryBlueFajita.png"
+          alt="Gary Blue Fajita"
+          width="150px"
+          height="100px"
+          class="left"
+        />
+        <div class="overlay">
+          <img src="../images/GaryBlueFajita.png" alt="Gary Blue Fajita" />
+          <p>
+            Embark on a flavor adventure with our tantalizing sizzling fajitas,
+            featuring tender, marinated chicken strips sautéed to perfection
+            alongside a medley of vibrant red and green bell peppers, and
+            onions. Indulge in the symphony of flavors as you build your own
+            fajitas with warm flour tortillas, creamy sour cream, zesty
+            guacamole, and our signature salsa. Each bite delivers a burst of
+            smoky, spicy, and savory sensations, leaving you craving more.
+
+            <button onclick="window.location.href = 'ordering.html'">
+              order
+            </button>
+          </p>
+        </div>
+      </div>
+
+      <div class="menuitems">
+        <span class="right"
+          >Gary Blue Tacos&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br />$8.99
+        </span>
+        <img
+          src="../images/GaryBlueTacos.png"
+          alt="Gary Blue Tacos"
+          width="150px"
+          height="100px"
+          class="left"
+        />
+        <div class="overlay">
+          <img src="../images/GaryBlueTacos.png" alt="Gary Blue Tacos" />
+          <p>
+            A trio of soft corn tortillas filled with your choice of our savory
+            fillings, topped with fresh cilantro and onions, and served with a
+            wedge of lime. This is a great option for a shareable meal or a
+            light lunch. The tacos are packed with flavor and the toppings are
+            fresh and flavorful
+            <button onclick="window.location.href = 'ordering.html'">
+              order
+            </button>
+          </p>
+        </div>
+      </div>
+
+      <div class="menuitems">
+        <span class="right"
+          >The Big Gary Burger <br />
+          $8.99
+        </span>
+        <img
+          src="../images/TheBigGaryBurger.png"
+          alt="The Big Gary Burger"
+          width="150px"
+          height="100px"
+          class="left"
+        />
+        <div class="overlay">
+          <img src="../images/TheBigGaryBurger.png" alt="The Big Gary Burger" />
+          <p>
+            A juicy all-beef patty topped with crisp lettuce, tomato, onion, and
+            your choice of cheese. Served on a toasted sesame seed bun with a
+            side of fries. A juicy, all-beef patty nestled between a toasted
+            sesame seed bun with crisp lettuce, vine-ripened tomato, sliced red
+            onion, creamy mayonnaise, and melty American cheese. Served with a
+            side of our hand-cut fries. This classic cheeseburger is sure to
+            satisfy any craving. The beef patty is cooked to perfection and the
+            toppings are fresh and flavorful. The fries are crispy on the
+            outside and fluffy on the inside.
+
+            <button onclick="window.location.href = 'ordering.html'">
+              order
+            </button>
+          </p>
+        </div>
+      </div>
+
+      <div class="menuitems">
+        <span class="right">Gary Blue Ice Cream <br />$5.99 </span>
+        <img
+          src="../images/GaryBlueIceCream.jpeg"
+          alt="Gary Blue Ice Cream Deluxe"
+          width="150px"
+          height="100px"
+          class="left"
+        />
+        <div class="overlay">
+          <img
+            src="../images/GaryBlueIceCream.jpeg"
+            alt="Gary Blue Ice Cream Deluxe"
+          />
+          <p>
+            A decadent and delightful dessert that combines the creamy richness
+            of cheesecake with the refreshing sweetness of strawberries and the
+            smooth indulgence of ice cream. This dish features a layer of creamy
+            New York-style cheesecake nestled upon a bed of sweet strawberry
+            sauce. Topped with scoops of vanilla ice cream, fresh strawberries,
+            and a drizzle of chocolate sauce, this sundae is a symphony of
+            textures and flavors that will tantalize your taste buds.
+
+            <button onclick="window.location.href = 'ordering.html'">
+              order
+            </button>
+          </p>
+        </div>
+      </div>
+
+      <div class="menuitems">
+        <span class="right">Gary Blue Omelettes <br />$4.99 </span>
+        <img
+          src="../images/GaryBlueOmelettes.jpeg"
+          alt="Gary Blue Omelettes"
+          width="150px"
+          height="100px"
+          class="left"
+        />
+        <div class="overlay">
+          <img
+            src="../images/GaryBlueOmelettes.jpeg"
+            alt="Gary Blue Omelettes"
+          />
+          <p>
+            A light and fluffy omelette filled with a blend of three melty
+            cheeses, diced tomatoes, and fresh spinach. This dish is a delicious
+            and satisfying option for any meal. This omelette is a great option
+            for those looking for a healthy and satisfying meal. It is packed
+            with protein, vitamins, and minerals, and it is sure to keep you
+            feeling full and energized.
+
+            <button onclick="window.location.href = 'ordering.html'">
+              order
+            </button>
+          </p>
+        </div>
+      </div>
+
+      <div class="menuitems">
+        <span class="right">Gary Blue Pancakes <br />$6.99 </span>
+        <img
+          src="../images/GaryBluePancakes.jpeg"
+          alt="Gary Blue Pancakes"
+          width="150px"
+          height="100px"
+          class="left"
+        />
+        <div class="overlay">
+          <img src="../images/GaryBluePancakes.jpeg" alt="Gary Blue Pancakes" />
+          <p>
+            A stack of fluffy buttermilk pancakes, served with your choice of
+            maple syrup and butter. These pancakes are a classic breakfast dish
+            that is sure to please everyone. The buttermilk adds a slight tang
+            to the pancakes, and the maple syrup and butter add sweetness and
+            richness.
+
+            <button onclick="window.location.href = 'ordering.html'">
+              order
+            </button>
+          </p>
+        </div>
+      </div>
+      <div class="menuitems">
+        <span class="right"
+          >Gary Blue Pizza&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <br />$19.99
+        </span>
+        <img
+          src="../images/GaryBluePizza.jpeg"
+          alt="Gary Blue Pizza"
+          width="150px"
+          height="100px"
+          class="left"
+        />
+        <div class="overlay">
+          <img src="../images/GaryBluePizza.jpeg" alt="Gary Blue Pizza" />
+          <p>
+            A classic and delicious pizza made with a simple combination of
+            tomato sauce, mozzarella cheese, and fresh basil leaves. This pizza
+            is a perfect example of how simple ingredients can come together to
+            create a flavorful and satisfying meal. The tomato sauce is tangy
+            and sweet, the mozzarella cheese is creamy and melty, and the fresh
+            basil leaves add a bright and refreshing flavor.
+
+            <button onclick="window.location.href = 'ordering.html'">
+              order
+            </button>
+          </p>
+        </div>
       </div>
     </div>
-  </div>
+  </body>
+  <!-- footer -->
+  <footer class="site-footer">
+    <div class="footer-column footer-hours-location">
+      <h3>Our Hours</h3>
+      <br />
+      <p>Monday - Friday 11am-11pm</p>
+      <p>Saturday & Sunday 11am - 7pm</p>
+      <br />
+      <h3>Find us</h3>
+      <br />
+      <p>55 Main St, St. John's NL, A1A 2A2</p>
+      <p>Phone: (709) 555-1212</p>
+      <p>
+        <a href="mailto:info@garybluediner.com" id="email"
+          >Email: info@garybluediner.com</a
+        >
+      </p>
+    </div>
 
-  <div class="footer-column footer-quick-links">
-    <h3>Quick Links</h3>
-    <a href="pages/index.html">Home</a>
-    <a href="../pages/menu.html">Menu</a>
-    <a href="..pages/ordering.html/">Order</a>
-  </div>
-  <p class="copyright-info">
-    © Gary Blue's Diner 2024. All rights reserved.
-  </p>
-</footer>
-<script src="../scripts/menu.js"></script>
-<script src="../scripts/links.js"></script>
+    <div class="footer-column footer-social-media">
+      <img
+        src="../images/GaryBlueLogo.png"
+        alt="Gary Blue's Diner"
+        class="footer-logo"
+      />
+      <div>
+        <h3>Find Gary On Social Media</h3>
+        <div class="social-icons">
+          <a href="https://facebook.com" aria-label="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://twitter.com" aria-label="Twitter"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://instagram.com" aria-label="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-column footer-quick-links">
+      <h3>Quick Links</h3>
+      <a href="pages/index.html">Home</a>
+      <a href="../pages/menu.html">Menu</a>
+      <a href="..pages/ordering.html/">Order</a>
+    </div>
+    <p class="copyright-info">© Gary Blue's Diner 2024. All rights reserved.</p>
+  </footer>
+  <script src="../scripts/menu.js"></script>
+  <script src="../scripts/links.js"></script>
 </html>

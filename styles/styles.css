@@ -1,3 +1,5 @@
+/* Author: Maz Radwan FrontEnd Dev Sprint 1 Feb 2024 */
+
 /* Basic Reset */
 * {
   margin: 0;
@@ -263,7 +265,7 @@ p {
   transform: translateY(100%);
 }
 
-/* You can use the same slideInFromBottom animation */
+/* The same slideInFromBottom animation */
 .gary-image.animate,
 .gary-info.animate {
   opacity: 1;
