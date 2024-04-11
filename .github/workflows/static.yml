@@ -35,32 +35,15 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload artifact for 'pages' directory
+      - name: Upload artifacts for deployment
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './pages'
-          name: 'pages-artifact'
-          retention-days: 1
-
-      - name: Upload artifact for 'styles' directory
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: './styles'
-          name: 'styles-artifact'
-          retention-days: 1
-
-      - name: Upload artifact for 'scripts' directory
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: './scripts'
-          name: 'scripts-artifact'
-          retention-days: 1
-
-      - name: Upload artifact for 'images' directory
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: './images'
-          name: 'images-artifact'
+          path: |
+            pages
+            styles
+            scripts
+            images
+          name: 'github-pages'  # This name must match what actions/deploy-pages@v4 is expecting
           retention-days: 1
 
       - name: Deploy to GitHub Pages
