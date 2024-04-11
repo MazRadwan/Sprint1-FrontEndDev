@@ -39,11 +39,11 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           path: |
-            pages
-            styles
-            scripts
-            images
-          name: 'github-pages'  # This name must match what actions/deploy-pages@v4 is expecting
+            - pages
+            - styles
+            - scripts
+            - images
+          name: 'github-pages'
           retention-days: 1
 
       - name: Deploy to GitHub Pages
