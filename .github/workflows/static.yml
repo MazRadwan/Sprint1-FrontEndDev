@@ -32,17 +32,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Install Node.js (if needed for building)
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16' # Use whatever version of Node.js your project requires
-
-      - name: Install dependencies (if needed)
-        run: npm install # Run this if you have a package.json file and need to install dependencies
-
-      - name: Build (if needed)
-        run: npm run build # Run this if you have a build script defined in your package.json
-
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
